@@ -28,6 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "my virtual songbook"
+    "description": "my virtual songbook",
+    "githubUrl": "https://github.com/MeguRobert/Worship-Songbook"
   }
 }

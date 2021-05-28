@@ -19,7 +19,6 @@ const Searcher = (props) =>
   );
 }
 
-cons
 const styles = StyleSheet.create({
   header: {
     height: 40,
