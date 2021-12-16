@@ -1,8 +1,6 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer, NavigationEvents } from 'react-navigation';
 import Home from '../screens/home';
 import Review from '../screens/review';
-import { globalStyles } from '../styles/global';
 import Header from '../shared/header';
 import ReviewHeader from '../shared/reviewHeader';
 import React from 'react';

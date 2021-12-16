@@ -1,6 +1,6 @@
 
 import React, { useState} from 'react';
-import { StyleSheet, Text, View, Platform, StatusBar, FlatList,TouchableOpacity, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, Text, View, Platform, StatusBar, FlatList, TouchableOpacity, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Song from '../Components/song';
 import Searcher from '../Components/searcher';
 import Data from '../database/data';
@@ -17,13 +17,19 @@ export default function Home({ navigation })
     }
     setSongs(() =>
     {
-      if (isNaN(text)) {
-        return initialData.filter(song => song.title.match(text));
-      }
-      return initialData.filter(song => song.id.match(text));
+      return initialData.filter(song => FilterSongs(song, text));
 
     })
     
+  }
+
+  const FilterSongs = (song, text) => {
+    const textLower = text.toLowerCase();
+    const id = song.id.toString();
+    const title = song.title.toLowerCase();
+    const lirycs = song.text.toLowerCase();
+
+    return (title.includes(textLower) || id.includes(textLower) || lirycs.includes(textLower));
   }
 
   const pressHandler = (item) =>

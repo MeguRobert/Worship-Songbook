@@ -57,7 +57,7 @@ let ch = {
 
 const chords = [
   null,
-  `         ${mol[get(ch.E)]}       ${mol[get(9)]}       ${mol[get(4)]}      ${mol[get(9)]}
+  `         ${mol[get(4)]}       ${mol[get(9)]}       ${mol[get(4)]}      ${mol[get(9)]}
      ${dur[get(11)]}7                   ${mol[get(4)]}
      ${mol[get(4)]}       ${mol[get(9)]}       ${mol[get(4)]}    ${mol[get(9)]}
      ${dur[get(11)]}7                   ${mol[get(4)]}
